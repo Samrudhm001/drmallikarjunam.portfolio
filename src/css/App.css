@@ -1,0 +1,9 @@
+.sec .animate {
+  transform: scale(0.7);
+}
+section .animate {
+  transition: 1s;
+}
+.sec .show-animate .animate {
+  transform: scale(1);
+}

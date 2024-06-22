@@ -1,0 +1,12 @@
+.pub{
+    transition: 0.3s ease-in-out;
+
+}
+.pub:hover{
+    transform: scale(1.08);
+}
+@media only screen and (max-width:600px){
+    .pub{
+        height:100vh ;
+    }
+}

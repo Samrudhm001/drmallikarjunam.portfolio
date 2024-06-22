@@ -1,0 +1,16 @@
+.smallcards{
+    transition: 0.3s ;
+    font-family: "Inter", sans-serif;
+}
+
+.smallcards:hover {
+    transform: scale(1.08);
+  }
+.card-body{
+    background-color: black;
+}
+@media only screen and (max-width: 600px){
+    .card:hover {
+        transform: scale(1);
+      } 
+}

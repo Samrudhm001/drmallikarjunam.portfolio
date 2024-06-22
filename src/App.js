@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./css/App.css";
+import nav from "./nav.js";
+import hero from "./hero.js";
+import About from "./About.js";
+import footer from "./footer.js";
+import content from "./content.js";
+import React, { useEffect } from "react";
+import { handleScroll } from "./scroll.js";
+import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {nav()}
+      {hero()}
+      {About()}
+      {content()}
+      {footer()}
+    </>
   );
 }
 

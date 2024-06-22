@@ -1,0 +1,116 @@
+.background {
+  width: 100%;
+  height: 220vh;
+  background-color: rgb(0, 0, 0);
+}
+.about-head {
+  color: white;
+  font-size: 3.5rem;
+  margin: 0;
+  margin-left: 6%;
+  padding-top: 30px;
+  font-weight: 500;
+  margin-bottom: 2%;
+}
+.blue {
+  color: aqua;
+  padding: 8px;
+}
+.college-img {
+  height: 40vh;
+  width: 70%;
+  position: absolute;
+  margin: 0;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  opacity: 0.5;
+  margin-left: 15%;
+  z-index: 100;
+}
+
+.work {
+  position: absolute;
+  height: 60vh;
+  width: 30%;
+  margin-left: 8%;
+  background-color: rgb(0, 55, 255);
+  margin-top: 6%;
+}
+.about-contents {
+  width: 100%;
+  height: 45vh;
+  position: relative;
+}
+.education {
+  float: right;
+  height: 50vh;
+  width: 40%;
+  background-color: aqua;
+  margin-right: 3%;
+  margin-top: 1%;
+}
+.cards {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 5%;
+}
+.quote {
+  margin-top: 5%;
+  width: 100%;
+  height: 170vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 600px) {
+  .about-head {
+    font-size: 2.2rem;
+  }
+  .card-container {
+    flex-direction: column;
+    height: 100vh;
+  }
+  .work {
+    width: 0;
+    height: 0;
+    position: unset;
+    margin: 0;
+    background-color: black;
+  }
+  .adjust {
+    height: 2000px;
+    width: 100%;
+  }
+
+  .education {
+    width: 0;
+    height: 0;
+    position: unset;
+    margin: 0;
+    background-color: black;
+  }
+  .college-img {
+    width: 100%;
+    margin: 0;
+    position: unset;
+  }
+  .cards {
+    flex-direction: column;
+    align-items: center;
+    height: 110vh;
+    margin-top: 10%;
+  }
+  .background {
+    height: 300vh;
+  }
+  .quote {
+    height: 150vh;
+    align-items: center;
+  }
+  .adjust {
+    height: 150vh;
+  }
+}
